@@ -2,13 +2,6 @@
     font-family: "Roboto-Regular";
     src: url("fonts/Roboto-Regular.ttf");
   }
-  * {
-    box-sizing: Border-box;
-  }
-  html {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
   ::selection {
     background: #00909e; /* WebKit/Blink Browsers */
     color: white;
@@ -132,7 +125,6 @@
     color: #00909e;
   }
   main {
-    width: 100%;
     max-width: 1400px;
     min-height: 100vh;
     counter-reset: section 0;

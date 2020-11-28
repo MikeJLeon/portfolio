@@ -21,7 +21,7 @@ function scrollArrowBig() {
       }
     }
   }
-  function initialize(){
+  const initialize = () =>{
     let name = "Michael Leon";
     let current = 100;
     for(let chara of name){
@@ -36,6 +36,7 @@ function scrollArrowBig() {
     }
     current = 0;
     initializeNav();
+    window.addEventListener('scroll', show);
   }
   function showintro(){
     this.classList.remove("hiddenIntro");
@@ -89,10 +90,6 @@ function scrollArrowBig() {
   function showNavButtons() {
     this.classList.remove("initializeButtons");
   }  
-
-  window.onload = function () {
-    window.setTimeout(initialize, 500);
-    window.addEventListener('scroll', show);
-  };
   
+  export { initialize }
   

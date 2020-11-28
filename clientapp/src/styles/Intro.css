@@ -1,0 +1,54 @@
+.introContainer{
+    box-sizing:border-box;
+    overflow:hidden;
+    width:100vw;
+    height:100vh;
+    background-color: #dae1e7;
+}
+.videoContainer{
+    position:fixed;
+    left:0;
+    top:0;
+}
+.videoContainerFade{
+    opacity:0;
+    transition:0.5s opacity ease-in-out;
+}
+.activeVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: grayscale(100%);
+  }
+  body{
+      overflow: hidden;
+  }
+  .welcomeContainer{
+      display: grid;
+      grid-template-rows: auto 50px 50px auto;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      background-color:rgba(0, 0, 0, 0.25);
+      color:white;
+      height:100%;
+      width:100%;
+  }
+  #hello{
+    grid-row:2;
+    font-size:2rem;
+    transition:1s opacity ease-in-out;
+  }
+  .helloInitial{
+      opacity:0;
+  }
+  #description{
+      grid-row:3;
+      font-size:1rem;
+      transition:1s opacity ease-in-out;
+  }
+  .descriptionInitial{
+      opacity:0;
+  }

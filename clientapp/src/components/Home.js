@@ -1,5 +1,5 @@
 import '../styles/Home.css';
-import '../js/initialize';
+//import '../js/initialize';
 import me from "../img/meEdited.jpg"
 
 function Home() {
