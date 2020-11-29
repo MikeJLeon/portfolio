@@ -9,22 +9,10 @@ const videoStart = () => {
 }
 
 const fadeInIntro = () => {
-    let hello = document.getElementsByClassName("helloInitial")[0];
-    let description = document.getElementsByClassName("descriptionInitial")[0];
     let videoContainer = document.getElementsByClassName("videoContainer")[0];
-    let welcomeContainer = document.getElementsByClassName("welcomeContainer")[0];
     setTimeout(() => {
-        hello.classList.remove("helloInitial");
-        setTimeout(() => {
-            description.classList.remove("descriptionInitial");
-            setTimeout(() =>{
-                hello.classList.add("helloInitial");
-                description.classList.add("descriptionInitial");
-                videoContainer.classList.add("videoContainerFade");
-                welcomeContainer.classList.add("videoContainerFade");
-                initialize();
-            }, 500)
-        }, 500)
+        //videoContainer.classList.add("videoContainerFade");
+        initialize();
     }, 500)
 }
 

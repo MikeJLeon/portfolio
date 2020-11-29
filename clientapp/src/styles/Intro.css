@@ -6,16 +6,26 @@
     background-color: #dae1e7;
 }
 .videoContainer{
-    position:fixed;
+    position: absolute;
     left:0;
     top:0;
+    height:100%;
+    transition:0.5s max-height ease-in-out;
 }
 .videoContainerFade{
     opacity:0;
     transition:0.5s opacity ease-in-out;
 }
+.videoOverlay{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.55);
+}
 .activeVideo{
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     min-width: 100%;

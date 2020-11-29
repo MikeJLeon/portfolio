@@ -34,7 +34,19 @@ function scrollArrowBig() {
     for(let element of introElements){
       window.setTimeout(showintro.bind(element), current);
     }
+    let videoContainer = document.getElementsByClassName("videoContainer")[0];
+    setTimeout(() => {
+      videoContainer.classList.add("videoContainerShrink");
+    }, current)
     current = 0;
+
+    let arrow = document.getElementsByClassName("arrow")[0];
+    setInterval(()=>{
+      arrow.classList.add("arrowBreath");
+      setTimeout(()=>{
+        arrow.classList.remove("arrowBreath");
+      }, 2000)
+    }, 5000);
     initializeNav();
     window.addEventListener('scroll', show);
   }

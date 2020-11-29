@@ -24,10 +24,6 @@ function Intro() {
                 <video className="" muted id="tramVideo">
                     <source src={tram} type="video/mp4" />
                 </video></div>
-            <div className="welcomeContainer">
-                <div id="hello" className="helloInitial">Hello!</div>
-                <div id="description" className="descriptionInitial">I am Michael Leon, welcome to the portfolio!</div>
-            </div>
             <Nav/>
             <Home/>
         </div>
