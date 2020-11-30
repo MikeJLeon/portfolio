@@ -281,7 +281,7 @@
     color: #f9f7f7;
   }
   .name {
-    color: #142850;
+    color: #00909e;
     transition: color 3s;
   }
   .nameGreen {
@@ -578,22 +578,34 @@
   }
   
   .arrow{
-    position: absolute;
-    width: 28px;
-    height: 28px;
+    cursor: pointer;
+    z-index:3;
+    width: 15px;
+    height: 15px;
     transform: rotate(-135deg);
-    border-left: 5px solid blue;
-    border-top: 5px solid blue;
-    transition:2s height, 2s width;
+    border-left: 5px solid #dae1e7;
+    border-top: 5px solid #dae1e7;
+    transition:0.5s transform ease-in-out, 0.15s border ease-in-out, 0.5s opacity ease-in-out;
+    margin-bottom: 100px;
+
   }
 
   .arrowBreath{
-    height:38px;
-    width:38px;
+    transform:scale(1.5) rotate(-135deg);
   }
   .arrowContainer{
-    width:100%;
-    display:flex;
-    margin:0 auto;
-    justify-content:center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .arrow:hover{
+    border-left: 5px solid #00909e;
+    border-top: 5px solid #00909e;
   }

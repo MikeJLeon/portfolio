@@ -45,8 +45,8 @@ function scrollArrowBig() {
       arrow.classList.add("arrowBreath");
       setTimeout(()=>{
         arrow.classList.remove("arrowBreath");
-      }, 2000)
-    }, 5000);
+      }, 500)
+    }, 1000);
     initializeNav();
     window.addEventListener('scroll', show);
   }

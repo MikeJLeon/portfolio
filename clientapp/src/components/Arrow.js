@@ -1,7 +1,7 @@
 function Arrow(){
     return(
         <div className="arrowContainer">
-            <div className="arrow">
+            <div className="arrow hiddenIntro">
 
             </div>
         </div>
