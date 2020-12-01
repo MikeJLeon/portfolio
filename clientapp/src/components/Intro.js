@@ -4,9 +4,6 @@ import tram from "../video/tram.mp4";
 import { videoStart, fadeInIntro } from "../js/initializeIntro.js";
 import Nav from "./Nav";
 import Home from "./Home";
-
-import "../styles/Intro.css";
-
 function Intro() {
     window.onload = () => {
         videoStart();

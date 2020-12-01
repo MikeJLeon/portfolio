@@ -1,4 +1,3 @@
-import '../styles/Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare as github, faLinkedinIn as linkedin } from '@fortawesome/free-brands-svg-icons'
 
