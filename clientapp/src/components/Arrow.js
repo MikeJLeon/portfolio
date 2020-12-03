@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from "react";
-
-function scrollDown(arrowDestination){
-    console.log(document.querySelector(arrowDestination));
-    document.querySelector(arrowDestination).scrollIntoView(true);
-}
+import {scroll} from "../js/scroll";
 
 function Arrow(props) {
     const [arrowDestination, setArrowDestination] = useState("");
+    const [activeLink, setActiveLink] = useState("");
     useEffect(()=>{
         setArrowDestination(props.nextPage);
+        setActiveLink(props.activeLink);
     })
     return (
         <div className="arrowContainer">
-                <div className="arrow hiddenIntro" onClick={() => scrollDown(arrowDestination)}>
+                <div className="arrow hiddenIntro" onClick={() => scroll(arrowDestination, activeLink)}>
 
                 </div>
         </div>

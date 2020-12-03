@@ -15,7 +15,7 @@ function About() {
             </p>
                 <img src={me} />
             </div>
-            <Arrow />
+            <Arrow nextPage="contactContainer" activeLink="contactlink"/>
         </div>
     )
 }

@@ -9,7 +9,7 @@ function Home() {
         fadeInIntro();
     }
     return (
-        <div className="homeContainer">
+        <div id="homeContainer" className="homeContainer">
             <main>
                 <section className="initialize show" id="intro">
                     <div className="videoContainer">
@@ -32,7 +32,7 @@ function Home() {
                         Proven ability to create full-stack applications with efficient and
                         thoughtfully designed data storage and clean, modern UIs. Always
                         exploring and learning new technologies.</p>
-                    <Arrow nextPage={"#projectsContainer"}/>
+                    <Arrow nextPage="projectsContainer" activeLink="projectslink"/>
                 </section>
             </main>
         </div>

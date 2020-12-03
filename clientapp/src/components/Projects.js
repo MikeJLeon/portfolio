@@ -94,7 +94,7 @@ function Projects() {
                     </div>
                 </div>
             </div>
-            <Arrow nextPage="#aboutContainer" />
+            <Arrow nextPage="aboutContainer" activeLink="aboutlink" />
         </div>
     )
 }
