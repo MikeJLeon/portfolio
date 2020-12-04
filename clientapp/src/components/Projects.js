@@ -1,5 +1,5 @@
 import Arrow from "./Arrow";
-
+import planner from "../img/planner.png" 
 function Projects() {
     return (
         <div id="projectsContainer" class="projectsContainer">
@@ -7,7 +7,9 @@ function Projects() {
             <div class="workContainer">
             <div class="workTile">
                     <div class="workUpper">
-
+                        <img class="workUpperBG" src={planner}/>
+                        <div class="workUpperOverlay"></div>
+                        <h3>Planner</h3>
                     </div>
                     <div class="workLower">
 

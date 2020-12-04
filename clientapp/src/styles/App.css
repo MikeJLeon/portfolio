@@ -751,3 +751,24 @@ form p {
   border-left: 5px solid #00909e;
   border-top: 5px solid #00909e;
 }
+.workUpper{
+  position: relative;
+  overflow:hidden;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.workUpperBG{
+  position: absolute;
+  max-height:300px;
+  max-width:1200px;
+}
+.workUpperOverlay{
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+}
+.workUpper h3{
+  position: relative;
+}
